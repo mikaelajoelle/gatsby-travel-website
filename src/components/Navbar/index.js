@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { Nav, NavBarContainer, NavLogo, NavIcon, MobileIcon } from './NavbarElements';
+import { Nav, NavbarContainer, NavLogo, NavIcon, MobileIcon } from './NavbarElements';
 
 const Navbar = () => {
 
     const [click, setClick] = useState(false);
     const [scroll, setScroll] = useState(false);
 
+    // Toggle the mobile icon
     const handleClick = () => setClick(!click);
 
     // Scroll will become true once scrolled 80px
@@ -30,15 +31,15 @@ const Navbar = () => {
             <IconContext.Provider value={{color: "#141414"}}>
                 {/* When you scroll or click, it updates the background */}
                 <Nav active={scroll} click={click}>
-                    <NavBarContainer>
+                    <NavbarContainer>
                         <NavLogo to="/">
-                            <MobileIcon onClick={handleClick}>
-                                {click ? <FaTimes /> : <FaBars />}
-                            </MobileIcon>
-                            <NavIcon />
+                        <NavIcon />
                             EXPLOR
                         </NavLogo>
-                    </NavBarContainer>
+                        <MobileIcon onClick={handleClick}>
+                                {click ? <FaTimes /> : <FaBars />}
+                        </MobileIcon>
+                    </NavbarContainer>
                 </Nav>
             </IconContext.Provider>
         </>

@@ -4,7 +4,7 @@ import {Link} from 'gatsby';
 
 export const Nav = styled.nav`
     background: ${({active}) => active ? "#fff" : 
-    "linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0)) 100% )"};
+    "linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0)) 100%"};
     height: 80px;
     display: flex;
     justify-content: center;
@@ -21,7 +21,7 @@ export const Nav = styled.nav`
     }
 `
 
-export const NavBarContainer = styled.div`
+export const NavbarContainer = styled.div`
     display: flex;
     justify-content: space-betwwen;
     height: 80px;
