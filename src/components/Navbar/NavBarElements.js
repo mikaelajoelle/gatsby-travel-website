@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import {DiScala} from 'react-icons/Di';
+import {Link} from 'gatsby';
 
 export const Nav = styled.nav`
     background: ${({active}) => active ? "#fff" : 
@@ -36,4 +38,21 @@ export const NavLogo = styled(Link)`
     font-size: 1.5rem;
     display: flex;
     align-items: center;
+`
+export const NavIcon = styled(DiScala)`
+    margin: 0 0.5rem 0 2rem;
+`
+
+export const MobileIcon = styled.div`
+    display: none;
+
+    @media screen and (max-width: 960px){
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
 `
