@@ -23,7 +23,7 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
     display: flex;
-    justify-content: space-betwwen;
+    justify-content: space-between;
     height: 80px;
     z-index: 1;
     width: 100%;
@@ -34,7 +34,7 @@ export const NavLogo = styled(Link)`
     color: #141414;
     justify-self: flex-start;
     cursor: pointer;
-    text-decoration: nonel
+    text-decoration: none;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -54,5 +54,57 @@ export const MobileIcon = styled.div`
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
+    }
+`
+
+export const NavMenu = styled.ul`
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+
+    @media screen and (max-width: 960px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: ${({click}) => (click ? "100%" : "-1000px")};
+        opacity: 1;
+        transition: all 0.2s ease;
+        background: #fff;
+
+    }
+`
+
+export const NavItem = styled.li`
+    height: 80px;
+
+    @media screen and (max-width: 960px) {
+        width: 100%;
+    }
+`
+
+export const NavLinks = styled(Link)`
+    color: #141414;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+
+    @media screen and (max-width: 960px) {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        font-weight: 300;
+
+        &:hover {
+            color: #ff4040;
+            transition: all 0.3s ease;
+        }
     }
 `
