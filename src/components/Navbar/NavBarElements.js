@@ -3,7 +3,7 @@ import {Link} from 'gatsby';
 
 export const Nav = styled.nav`
     background: ${({active}) => active ? "#fff" : 
-    "linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0)) 100%"};
+    "transparent"};
     height: 80px;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(Link)`
-    color: #141414;
+    color: #fff;
     justify-self: flex-start;
     cursor: pointer;
     text-decoration: none;
@@ -37,6 +37,10 @@ export const NavLogo = styled(Link)`
     align-items: center;
     margin-left: 20px;
     font-family: "Ubuntu", sans-serif;
+
+    @media screen and (max-width: 960px){
+        color: #141414;
+    }
 `
 
 export const MobileIcon = styled.div`
@@ -76,7 +80,7 @@ export const NavMenu = styled.ul`
 `
 
 export const NavLink = styled(Link)`
-    color: #141414;
+    color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -91,6 +95,7 @@ export const NavLink = styled(Link)`
         width: 100%;
         display: table;
         font-weight: 300;
+        color: #141414;
 
         &:hover {
             color: #ff4040;
