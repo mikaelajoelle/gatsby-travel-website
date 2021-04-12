@@ -9,6 +9,8 @@ const Navbar = () => {
     const [click, setClick] = useState(false);
     const [scroll, setScroll] = useState(false);
 
+    let iconStyles = {color: scroll ? "#141414" : "#fff"}
+
     // Toggle the mobile icon
     const handleClick = () => setClick(!click);
 
@@ -37,7 +39,7 @@ const Navbar = () => {
                             Traveyo
                         </NavLogo>
                         <MobileIcon onClick={handleClick}>
-                                {click ? <FaTimes /> : <FaBars />}
+                                {click ? <FaTimes style={iconStyles} /> : <FaBars style={iconStyles} />}
                         </MobileIcon>
                         <NavMenu onClick={handleClick} click={click}>
                             <NavItem>

@@ -12,10 +12,6 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 999;
-
-    @media screen and (max-width: 960px) {
-        background: #fff;
-    }
 `
 
 export const NavbarContainer = styled.div`
@@ -38,10 +34,6 @@ export const NavLogo = styled(Link)`
     align-items: center;
     margin-left: 20px;
     font-family: "Ubuntu", sans-serif;
-
-    @media screen and (max-width: 960px){
-        color: #141414;
-    }
 `
 
 export const MobileIcon = styled.div`
