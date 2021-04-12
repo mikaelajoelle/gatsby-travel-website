@@ -36,6 +36,7 @@ export const SocialLogo = styled(Link)`
     display: flex;
     align-items: center;
     margin-bottom: 16px;
+    font-family: "Ubuntu", sans-serif;
 `
 
 export const WebsiteRights = styled.small`
