@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLink, NavBtn } from './NavbarElements';
-import { menuData } from "../data/MenuData";
-import { Button } from "../ButtonElements";
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn } from './NavbarElements';
+import {Button} from "../ButtonElements";
 
 const Navbar = () => {
 
@@ -34,21 +33,30 @@ const Navbar = () => {
                 {/* When you scroll or click, it updates the background */}
                 <Nav active={scroll} click={click}>
                     <NavbarContainer>
-                        <NavLogo to="/">
+                        <NavLogo to="/" active={scroll}>
                             Traveyo
                         </NavLogo>
                         <MobileIcon onClick={handleClick}>
                                 {click ? <FaTimes /> : <FaBars />}
                         </MobileIcon>
-                        <NavMenu>
-                           { menuData.map((item, index) => (
-                               <NavLink to={item.link} key={index}>
-                                   {item.title}
-                               </NavLink>
-                           )) }
+                        <NavMenu onClick={handleClick} click={click}>
+                            <NavItem>
+                                <NavLinks active={scroll} to="/about">About</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks active={scroll} to="/destinations">Destinations</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks active={scroll} to="/images">Gallery</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks active={scroll} to="/contact">Contact</NavLinks>
+                            </NavItem>
                         </NavMenu>
                         <NavBtn>
-                            <Button primary="true" big="true" round="true">Book a Flight</Button>
+                        <Button primary="true" big="false" round="true">
+                            Book a Flight
+                        </Button>
                         </NavBtn>
                     </NavbarContainer>
                 </Nav>
