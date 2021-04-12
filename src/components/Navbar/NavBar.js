@@ -41,16 +41,24 @@ const Navbar = () => {
                         </MobileIcon>
                         <NavMenu onClick={handleClick} click={click}>
                             <NavItem>
-                                <NavLinks active={scroll} to="/about">About</NavLinks>
+                                <NavLinks active={scroll} to="/about">
+                                    About
+                                </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks active={scroll} to="/destinations">Destinations</NavLinks>
+                                <NavLinks active={scroll} to="/destinations">
+                                    Destinations
+                                </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks active={scroll} to="/images">Gallery</NavLinks>
+                                <NavLinks active={scroll} to="/images">
+                                    Gallery
+                                </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks active={scroll} to="/contact">Contact</NavLinks>
+                                <NavLinks active={scroll} to="/contact">
+                                    Contact
+                                </NavLinks>
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
