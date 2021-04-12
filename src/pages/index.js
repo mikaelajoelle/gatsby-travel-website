@@ -1,5 +1,5 @@
 import * as React from "react";
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../components/HeroSection/Hero";
 import Image from "../components/image";
 
 import Layout from "../components/layout";

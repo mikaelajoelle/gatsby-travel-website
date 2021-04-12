@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } from './NavbarElements';
+import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLink, NavBtn } from './NavbarElements';
+import { menuData } from "../data/MenuData";
+import { Button } from "../ButtonElements";
 
 const Navbar = () => {
 
@@ -33,22 +35,21 @@ const Navbar = () => {
                 <Nav active={scroll} click={click}>
                     <NavbarContainer>
                         <NavLogo to="/">
-                            Travello
+                            Traveyo
                         </NavLogo>
                         <MobileIcon onClick={handleClick}>
                                 {click ? <FaTimes /> : <FaBars />}
                         </MobileIcon>
-                        <NavMenu onClick={handleClick} click={click}>
-                            <NavItem>
-                                <NavLinks to="/">Home</NavLinks>
-                            </NavItem>
-                            <NavItem>
-                                <NavLinks to="/images">Images</NavLinks>
-                            </NavItem>
-                            <NavItem>
-                                <NavLinks to="/destinations">Destinations</NavLinks>
-                            </NavItem>
+                        <NavMenu>
+                           { menuData.map((item, index) => (
+                               <NavLink to={item.link} key={index}>
+                                   {item.title}
+                               </NavLink>
+                           )) }
                         </NavMenu>
+                        <NavBtn>
+                            <Button primary="true" big="true" round="true">Book a Flight</Button>
+                        </NavBtn>
                     </NavbarContainer>
                 </Nav>
             </IconContext.Provider>

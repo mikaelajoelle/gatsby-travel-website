@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 *{
@@ -8,7 +8,7 @@
 }
 
 h1, p{
-  font-family: "Permanent Marker", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 .destinations{

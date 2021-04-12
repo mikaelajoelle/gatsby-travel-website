@@ -7,7 +7,7 @@
 
 import * as React from "react";
 import "./layout.css";
-import Navbar from './Navbar';
+import Navbar from './Navbar/NavBar';
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {

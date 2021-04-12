@@ -1,22 +1,25 @@
 import styled from 'styled-components';
+import {Link} from "gatsby";
 
-export const Button = styled.button`
+export const Button = styled(Link)`
     border-radius: 4px;
     background: ${({ primary }) => ( primary ? "#ff4040" :
     "#0467FB" )};
     white-space: no-wrap;
-    padding: ${({ big }) => (big ? "16px 64px" :
-    "10px 20px")};
+    padding: ${({ big }) => (big ? "16px 40px" :
+    "10px 32px")};
     color: #fff;
     font-size: ${({ fontBig }) => (fontBig? "20px" :
     "16px")};
     outline: none;
     border: none;
     cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s !important!;
+    border-radius: ${({round}) => (round? '50px' : 'none')};
     font-family: "Ubuntu", sans-serif;
 
     &:hover{
-        transition: all 0.3s ease-out;
         background: ${({ primary }) => ( primary ? "#0467FB" :
         "#ff4040" )};
     }

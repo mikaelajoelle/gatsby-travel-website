@@ -9,7 +9,7 @@ function HeroSection() {
             <p>Plan your next trip today</p>
             <div className="hero-btns">
                 {/* including props from styled components */}
-                <Button fontBig big primary>
+                <Button fontBig big primary round>
                     Get Started
                 </Button>
             </div>

@@ -14,10 +14,7 @@ export const Nav = styled.nav`
     z-index: 999;
 
     @media screen and (max-width: 960px) {
-        background: ${({ click, active }) => (click ? "#fff" : 
-        active ? "#fff" : 
-        "linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0)) 100%")};
-        transition: 0.8s all ease;
+        background: #fff;
     }
 `
 
@@ -38,7 +35,7 @@ export const NavLogo = styled(Link)`
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    margin-left: 25px;
+    margin-left: 20px;
     font-family: "Ubuntu", sans-serif;
 `
 
@@ -61,6 +58,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
+    margin-right: 10px;
 
     @media screen and (max-width: 960px) {
         display: flex;
@@ -72,19 +70,12 @@ export const NavMenu = styled.ul`
         opacity: 1;
         transition: all 0.2s ease;
         background: #fff;
+        margin-right: 0;
 
     }
 `
 
-export const NavItem = styled.li`
-    height: 80px;
-
-    @media screen and (max-width: 960px) {
-        width: 100%;
-    }
-`
-
-export const NavLinks = styled(Link)`
+export const NavLink = styled(Link)`
     color: #141414;
     display: flex;
     align-items: center;
@@ -105,5 +96,15 @@ export const NavLinks = styled(Link)`
             color: #ff4040;
             transition: all 0.3s ease;
         }
+    }
+`
+
+export const NavBtn = styled.div`
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+
+    @media screen and (max-width: 960px){
+        display: none;
     }
 `
