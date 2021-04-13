@@ -23,8 +23,4 @@ export const Button = styled(Link)`
         background: ${({ primary }) => ( primary ? "#0467FB" :
         "#ff4040" )};
     }
-
-    @media screen and (max-width: 960px) {
-        width: 100%;
-    }
 `
