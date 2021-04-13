@@ -3,7 +3,7 @@ import {Link} from "gatsby";
 
 export const Button = styled(Link)`
     border-radius: 4px;
-    background: ${({ primary }) => ( primary ? "#fa8100" :
+    background: ${({ primary }) => ( primary ? "#f26a2e" :
     "#0467FB" )};
     white-space: no-wrap;
     padding: ${({ big }) => (big ? "16px 40px" :

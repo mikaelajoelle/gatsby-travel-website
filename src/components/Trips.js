@@ -59,7 +59,7 @@ const Trips = ({heading}) => {
 
     return (
         <ProductsContainer>
-            <ProductsHeading>{heading}</ProductsHeading>
+            <ProductsHeading>Top Destinations</ProductsHeading>
             {/* Passing in data to function */}
             <ProductWrapper>{getTrips(data)}</ProductWrapper>
         </ProductsContainer>
@@ -70,31 +70,41 @@ export default Trips
 
 const ProductsContainer = styled.div`
     min-height: 100vh;
-    padding: 5rem calc((100vw - 1300px) / 2);
+    padding: 7rem calc((100vw - 1300px) / 2);
     background: #fff;
     color: #fff;
 `
 
-const ProductsHeading = styled.div`
-    font-size: clamp(1.2rem, 5vw, 3rem);
+const ProductsHeading = styled.h2`
+    font-size: clamp(1.2rem, 4vw, 2.5rem);
     text-align: center;
     margin-bottom: 5rem;
     color: #000;
+    font-weight: 300;
+
+    &::after{
+        content: '';
+        border-bottom: 1px solid #000;
+        width: 60px;
+        display: block;
+        margin: 1rem auto 0 auto;
+    }
 `
 
 const ProductWrapper = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     justify-items: center;
-    padding: 0 2rem;
+    padding: 0 10rem;
 
     @media screen and (max-width: 1200px){
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        padding: 0 5rem;
     }
 
-    @media screen and (max-width: 868px){
-        grid-template-columns: 1fr;
+    @media screen and (max-width: 600px){
+        padding: 0 2rem;
     }
 `
 

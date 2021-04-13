@@ -9,7 +9,7 @@ function HeroSection() {
         <div className="hero-container">
             <VideoBg src={Video} type="video.mp4" autoPlay loop playsInline muted/>
             <h1>Unreal Destinations</h1>
-            <p>Your dream oasis</p>
+            <p>Your Dream Oasis</p>
             <div className="hero-btns">
                 {/* including props from styled components */}
                 <Button fontbig="true" big="true" primary="true" round="true" to="/destinations">

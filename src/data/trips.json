@@ -12,12 +12,6 @@
         "button": "View Destination"
     },
     {
-        "img": "../images/travel-3.jpg",
-        "alt": "Rialto Bridge - Venezia Italy",
-        "name": "Venezia, Italy",
-        "button": "View Destination"
-    },
-    {
         "img": "../images/travel-4.jpg",
         "alt": "Santorini Greece",
         "name": "Santorini, Greece",

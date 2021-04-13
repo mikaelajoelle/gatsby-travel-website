@@ -13,7 +13,7 @@ export const StatsData = [
     {
         icon: (<MdAirplanemodeActive css={`color: #f3a82e`} />),
         title: "1 Million Trips Made",
-        desc: "Over 1 Million trips completed last year",
+        desc: "Over 1 Million trips completed",
     },
     {
         icon: (<MdTimer css={`color: #f34f2e`} />),

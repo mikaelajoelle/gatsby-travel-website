@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .destinations{
@@ -33,5 +34,34 @@
 @media screen and (max-width: 768px){
   .destinations {
       font-size: 60px;
+  }
+}
+
+.images-gallery{
+  background: url("../images/island-beach.jpg") center no-repeat;
+  height: 50vh;
+  width: 100%;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  margin-top: -80px;
+  padding-top: 80px;
+  text-align: center;
+  color: #fff;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 960px){
+  .images-gallery {
+      font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .images-gallery {
+      font-size: 40px;
   }
 }

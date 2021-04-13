@@ -7,7 +7,7 @@ const Image = () => {
     const data = useStaticQuery(graphql`
     query {
         allFile(
-          filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, name: {nin: ["background", "background2", "travel-4", "testimonial-1", "testimonial-2"]}}
+          filter: {extension: {regex: "/(jpg)|(jpeg)/"}, name: {nin: ["background", "background2", "travel-4", "testimonial-1", "testimonial-2"]}}
         ) {
           edges {
             node {
@@ -25,7 +25,6 @@ const Image = () => {
 
     return (
         <div className="image-container">
-            <h1>View our Destinations</h1>
             <div className="image-grid">
                 {data.allFile.edges.map((image, key) => (
                     <Img key={key}
