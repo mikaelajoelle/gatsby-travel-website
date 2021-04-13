@@ -14,7 +14,7 @@ const Email = () => {
                        <label htmlFor="email">
                            <input type="email" placeholder="Enter your email" id="email" />
                        </label>
-                       <Button as="button" type="submit" primary="true" round="true" 
+                       <Button as="button" type="submit" primary="true" round="true" to="/" 
                        css={`
                        height: 48px;
 

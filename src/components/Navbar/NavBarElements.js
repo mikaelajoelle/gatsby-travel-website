@@ -24,8 +24,6 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(Link)`
-    color: ${({active}) => active ? "#141414" : 
-    "#fff"};
     justify-self: flex-start;
     cursor: pointer;
     text-decoration: none;
@@ -73,8 +71,6 @@ export const NavMenu = styled.ul`
 `
 
 export const NavLinks = styled(Link)`
-    color: ${({active}) => active ? "#141414" : 
-    "#fff"};
     display: flex;
     align-items: center;
     text-decoration: none;

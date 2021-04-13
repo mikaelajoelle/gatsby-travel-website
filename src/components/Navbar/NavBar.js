@@ -9,7 +9,10 @@ const Navbar = () => {
     const [click, setClick] = useState(false);
     const [scroll, setScroll] = useState(false);
 
-    let iconStyles = {color: scroll ? "#141414" : "#fff"}
+    let iconStyles = {color: scroll ? "#141414" : "#fff" && 
+    click? "#141414" : "#fff"};
+    let navBackgroundStyle = {backgroundColor: scroll ? "#fff" : "transparent" && 
+    click ? "#fff" : "transparent"};
 
     // Toggle the mobile icon
     const handleClick = () => setClick(!click);
@@ -33,9 +36,9 @@ const Navbar = () => {
             {/* Setting Icons to same colour */}
             <IconContext.Provider value={{color: "#141414"}}>
                 {/* When you scroll or click, it updates the background */}
-                <Nav active={scroll} click={click}>
+                <Nav active={scroll} click={click} style={navBackgroundStyle}>
                     <NavbarContainer>
-                        <NavLogo to="/" active={scroll}>
+                        <NavLogo to="/" style={iconStyles}>
                             Traveyo
                         </NavLogo>
                         <MobileIcon onClick={handleClick}>
@@ -43,28 +46,28 @@ const Navbar = () => {
                         </MobileIcon>
                         <NavMenu onClick={handleClick} click={click}>
                             <NavItem>
-                                <NavLinks active={scroll} to="/about">
+                                <NavLinks style={iconStyles} to="/about">
                                     About
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks active={scroll} to="/destinations">
+                                <NavLinks style={iconStyles} to="/destinations">
                                     Trips
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks active={scroll} to="/images">
+                                <NavLinks style={iconStyles} to="/images">
                                     Gallery
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks active={scroll} to="/contact">
+                                <NavLinks style={iconStyles} to="/contact">
                                     Contact
                                 </NavLinks>
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
-                        <Button primary="true" round="true">
+                        <Button primary="true" round="true" to="/">
                             Book a Flight
                         </Button>
                         </NavBtn>
