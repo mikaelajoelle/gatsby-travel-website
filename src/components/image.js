@@ -7,7 +7,7 @@ const Image = () => {
     const data = useStaticQuery(graphql`
     query {
         allFile(
-          filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, name: {nin: ["background", "background2", "travel-4"]}}
+          filter: {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, name: {nin: ["background", "background2", "travel-4", "testimonial-1", "testimonial-2"]}}
         ) {
           edges {
             node {
