@@ -27,11 +27,6 @@
     grid-column-end: span 2;
 }
 
-.image-item:nth-child(11) {
-    grid-row-start: 5;
-    grid-column-end: span 2;
-}
-
 .image-grid img:hover{
     transform: scale(1.1);
     transition: 0.6s all ease !important;
