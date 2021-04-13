@@ -49,7 +49,7 @@ const Navbar = () => {
                             </NavItem>
                             <NavItem>
                                 <NavLinks active={scroll} to="/destinations">
-                                    Destinations
+                                    Trips
                                 </NavLinks>
                             </NavItem>
                             <NavItem>
@@ -64,7 +64,7 @@ const Navbar = () => {
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
-                        <Button primary="true" big="false" round="true">
+                        <Button primary="true" round="true">
                             Book a Flight
                         </Button>
                         </NavBtn>
