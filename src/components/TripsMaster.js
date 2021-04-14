@@ -1,15 +1,15 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import { Button}  from './ButtonElements';
 import { ImLocation } from "react-icons/im";
 
-const Trips = ({heading}) => {
+const TripsMaster = ({heading}) => {
 
     const data = useStaticQuery(graphql`
-    query TripsQuery {
-        allTripsJson {
+    query {
+        allTripsMasterJson {
           edges {
             node {
               alt
@@ -31,18 +31,18 @@ const Trips = ({heading}) => {
     // Function goes through JSON data and returns data
     function getTrips(data) {
         const tripsArray = [];
-        data.allTripsJson.edges.forEach((item, index) => {
+        data.allTripsMasterJson.edges.forEach((item, index) => {
             tripsArray.push(
-                <ProductCard key={index}>
-                    <ProductImg 
+                <TripCard key={index}>
+                    <TripImg
                     alt={item.node.alt}
                     fluid={item.node.img.childImageSharp.fluid} 
                     />
-                    <ProductInfo>
-                        <TextWrap>
+                    <TripInfo>
+                        <TripTextWrap>
                             <ImLocation />
-                            <ProductTitle>{item.node.name}</ProductTitle>
-                        </TextWrap>
+                            <TripTitle>{item.node.name}</TripTitle>
+                        </TripTextWrap>
                         <Button primary="true" round="true" 
                             css={`
                             position: absolute; 
@@ -50,32 +50,32 @@ const Trips = ({heading}) => {
                             font-size: 14px`} 
                             to="/destinations">{item.node.button}
                         </Button>
-                    </ProductInfo>
-                </ProductCard>
+                    </TripInfo>
+                </TripCard>
             )
         })
         return tripsArray
     }
 
     return (
-        <ProductsContainer>
-            <ProductsHeading>{heading}</ProductsHeading>
+        <TripContainer>
+            <TripHeading>{heading}</TripHeading>
             {/* Passing in data to function */}
-            <ProductWrapper>{getTrips(data)}</ProductWrapper>
-        </ProductsContainer>
+            <TripWrapper>{getTrips(data)}</TripWrapper>
+        </TripContainer>
     )
 }
 
-export default Trips
+export default TripsMaster
 
-const ProductsContainer = styled.div`
+const TripContainer = styled.div`
     min-height: 100vh;
     padding: 7rem calc((100vw - 1300px) / 2);
     background: #fff;
     color: #fff;
 `
 
-const ProductsHeading = styled.h2`
+const TripHeading = styled.h2`
     font-size: clamp(1.2rem, 4vw, 2.5rem);
     text-align: center;
     margin-bottom: 5rem;
@@ -91,7 +91,7 @@ const ProductsHeading = styled.h2`
     }
 `
 
-const ProductWrapper = styled.div`
+const TripWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
@@ -108,7 +108,7 @@ const ProductWrapper = styled.div`
     }
 `
 
-const ProductCard = styled.div`
+const TripCard = styled.div`
     line-height: 2;
     width: 100%;
     height: 500px;
@@ -116,7 +116,7 @@ const ProductCard = styled.div`
     border-radius: 10px;
     transition: 0.2s ease;
 `
-const ProductImg = styled(Img)`
+const TripImg = styled(Img)`
     height: 100%;
     max-width: 100%;
     position: relative;
@@ -129,7 +129,7 @@ const ProductImg = styled(Img)`
     }
 `
 
-const ProductInfo= styled.div`
+const TripInfo= styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -140,14 +140,14 @@ const ProductInfo= styled.div`
     }
 `
 
-const TextWrap = styled.div`
+const TripTextWrap = styled.div`
     display: flex;
     align-items: center;
     position: absolute;
     top: 375px;
 `
 
-const ProductTitle = styled.div`
+const TripTitle = styled.div`
     font-weight: 400;
     font-size: 1rem;
     margin-left: 0.5rem;

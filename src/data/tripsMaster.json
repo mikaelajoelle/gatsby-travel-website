@@ -1,0 +1,38 @@
+[
+    {
+        "img": "../images/travel-1.jpg",
+        "alt": "Tian Tan Buddha",
+        "name": "Tian Tan Buddha, Hong Kong",
+        "button": "View Destination"
+    },
+    {
+        "img": "../images/travel-2.jpg",
+        "alt": "Perhentian Islands",
+        "name": "Perhentian Islands, Malaysia",
+        "button": "View Destination"
+    },
+    {
+        "img": "../images/travel-4.jpg",
+        "alt": "Santorini Greece",
+        "name": "Santorini, Greece",
+        "button": "View Destination"
+    },
+    {
+        "img": "../images/travel-3.jpg",
+        "alt": "Venezia Italy",
+        "name": "Venezia, Italy",
+        "button": "View Destination"
+    },
+    {
+        "img": "../images/travel-5.jpg",
+        "alt": "Grand Mosque United Arab Emirates",
+        "name": "Abu Dhabi, United Arab Emirates",
+        "button": "View Destination"
+    },
+    {
+        "img": "../images/travel-6.jpg",
+        "alt": "Barcelona Spain",
+        "name": "Barcelona, Spain",
+        "button": "View Destination"
+    }
+]

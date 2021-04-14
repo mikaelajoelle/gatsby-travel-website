@@ -7,12 +7,14 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Testiomonials from "../components/Testimonials";
 import Email from "../components/Email";
+import SlickSlider from "../components/SlickSlider";
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <HeroSection />
-    <Trips />
+    <Trips heading="Top Destinations"/>
+    <SlickSlider />
     <Testiomonials />
     <Email />
   </Layout>
