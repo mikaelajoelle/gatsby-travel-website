@@ -2,6 +2,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 import Slider from "react-slick";
+import styled from "styled-components";
 import Img from "gatsby-image";
 import { useStaticQuery, graphql } from "gatsby";
 import "../components/slider.css";
@@ -28,6 +29,12 @@ const SliderTrips = () => {
 
     return (
         <div className="slider-container">
+            <TopLine>
+               Gallery
+           </TopLine>
+           <Description>
+               Capture your Travels
+           </Description>
             <div className="slider-grid">
                 <Slider {...settings}>
                 {data.allFile.edges.map((image, key) => (
@@ -79,3 +86,17 @@ export default SliderTrips
         }
         ]
     };
+
+    
+const TopLine = styled.h2`
+    color: #077bf1;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+`
+
+const Description = styled.h3`
+    text-align: start;
+    margin-bottom: 4rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-weight: 300;
+`

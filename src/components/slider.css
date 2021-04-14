@@ -1,9 +1,7 @@
 .slider-container{
-    padding: 16rem;
+    padding: 10rem 16rem;
+    background: #fcfcfc;
 }
-
-.slick-list {margin: 0 -5px;}
-.slick-slide>div {padding: 0 5px;}
 
 @media screen and (max-width: 1200px){
     .slider-container{
@@ -16,4 +14,7 @@
         padding: 5rem 2rem;
     }
 }
+
+.slick-list {margin: 0 -5px;}
+.slick-slide>div {padding: 0 5px;}
 

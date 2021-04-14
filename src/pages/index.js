@@ -8,6 +8,7 @@ import Seo from "../components/seo";
 import Testiomonials from "../components/Testimonials";
 import Email from "../components/Email";
 import SlickSlider from "../components/SlickSlider";
+import TourGuide from "../components/TourGuide";
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <HeroSection />
     <Trips heading="Top Destinations"/>
     <Testiomonials />
+    <TourGuide />
     <SlickSlider />
     <Email />
   </Layout>

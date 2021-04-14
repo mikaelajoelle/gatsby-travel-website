@@ -59,7 +59,12 @@ const Trips = ({heading}) => {
 
     return (
         <ProductsContainer>
-            <ProductsHeading>{heading}</ProductsHeading>
+            <TopLine>
+               Destinations
+           </TopLine>
+           <Description>
+               Explore Popular Tours
+           </Description>
             {/* Passing in data to function */}
             <ProductWrapper>{getTrips(data)}</ProductWrapper>
         </ProductsContainer>
@@ -73,21 +78,14 @@ const ProductsContainer = styled.div`
     padding: 7rem 0;
     background: #fff;
     color: #fff;
-`
+    padding: 10rem 16rem;
 
-const ProductsHeading = styled.h2`
-    font-size: clamp(1.2rem, 4vw, 2.5rem);
-    text-align: center;
-    margin-bottom: 5rem;
-    color: #000;
-    font-weight: 300;
+    @media screen and (max-width: 1300px){
+        padding: 5rem 7rem;
+    }
 
-    &::after{
-        content: '';
-        border-bottom: 1px solid #000;
-        width: 60px;
-        display: block;
-        margin: 1rem auto 0 auto;
+    @media screen and (max-width: 600px){
+        padding: 5rem 2rem;
     }
 `
 
@@ -96,15 +94,9 @@ const ProductWrapper = styled.div`
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     justify-items: center;
-    padding: 0 16rem;
 
     @media screen and (max-width: 1300px){
         grid-template-columns: 1fr;
-        padding: 0 7rem;
-    }
-
-    @media screen and (max-width: 600px){
-        padding: 0 2rem;
     }
 `
 
@@ -151,4 +143,17 @@ const ProductTitle = styled.div`
     font-weight: 400;
     font-size: 1rem;
     margin-left: 0.5rem;
+`
+
+const TopLine = styled.h2`
+    color: #077bf1;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+`
+
+const Description = styled.h3`
+    margin-bottom: 4rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-weight: 300;
+    color: black;
 `

@@ -91,13 +91,13 @@ const TestimonialsContainer = styled.div`
     }
 `
 
-const TopLine = styled.p`
+const TopLine = styled.h2`
     color: #077bf1;
     font-size: 1rem;
     margin-bottom: 0.75rem;
 `
 
-const Description = styled.p`
+const Description = styled.h3`
     text-align: start;
     margin-bottom: 4rem;
     font-size: clamp(1.5rem, 5vw, 2rem);
@@ -137,12 +137,12 @@ const Testimonial = styled.div`
 
 const ColumnTwo = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15rem 15rem;
     margin-top: 2rem;
     grid-gap: 10px;
 
-    @media screen and (max-width: 500px){
-        grid-template-columns: 1fr;
+    @media screen and (max-width: 1000px){
+        grid-template-rows: 25rem 25rem;
     }
 `
 
