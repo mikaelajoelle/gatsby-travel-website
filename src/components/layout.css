@@ -12,6 +12,7 @@
 .destinations{
   text-align: center;
   background: url("../images/background.jpg") center center/cover no-repeat;
+  background-attachment: fixed;
   height: 50vh;
   width: 100%;
   object-fit: contain;
@@ -41,6 +42,7 @@
 
 .images-gallery{
   background: url("../images/island-beach.jpg") center no-repeat;
+  background-attachment: fixed;
   height: 50vh;
   width: 100%;
   object-fit: contain;

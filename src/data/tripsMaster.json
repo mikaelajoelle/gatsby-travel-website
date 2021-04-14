@@ -34,5 +34,41 @@
         "alt": "Barcelona Spain",
         "name": "Barcelona, Spain",
         "button": "View Destination"
+    },
+    {
+        "img": "../images/travel-7.jpg",
+        "alt": "Hvar Croatia",
+        "name": "Hvar, Croatia",
+        "button": "View Destination"
+    },
+    {
+        "img": "../images/travel-8.jpg",
+        "alt": "Florence Italy",
+        "name": "Florence, Italy",
+        "button": "View Destination"
+    },
+    {
+        "img": "../images/travel-9.jpg",
+        "alt": "Paris France",
+        "name": "Paris, France",
+        "button": "View Destination"
+    },
+    {
+        "img": "../images/travel-10.jpg",
+        "alt": "Imperial Palace Vienna Austria",
+        "name": "Vienna, Austria",
+        "button": "View Destination"
+    },
+    {
+        "img": "../images/travel-11.jpg",
+        "alt": "London England",
+        "name": "London, England",
+        "button": "View Destination"
+    },
+    {
+        "img": "../images/travel-12.jpg",
+        "alt": "Lofoten Islands Norway",
+        "name": "Lofoten Islands, Norway",
+        "button": "View Destination"
     }
 ]
