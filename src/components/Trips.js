@@ -100,7 +100,7 @@ const ProductWrapper = styled.div`
 
     @media screen and (max-width: 1200px){
         grid-template-columns: 1fr;
-        padding: 0 5rem;
+        padding: 0 7rem;
     }
 
     @media screen and (max-width: 600px){

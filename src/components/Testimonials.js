@@ -79,11 +79,11 @@ const TestimonialsContainer = styled.div`
     width: 100%;
     background: #fcfcfc;
     color: #000;
-    padding: 7rem 10rem;
+    padding: 8rem 10rem;
     height: 100%;
 
     @media screen and (max-width: 1200px){
-        padding: 5rem 5rem;
+        padding: 5rem 7rem;
     }
 
     @media screen and (max-width: 600px){
@@ -120,7 +120,7 @@ const ColumnOne = styled.div`
 
 const Testimonial = styled.div`
     padding-top: 1rem;
-    padding-right: 2rem;
+    padding-right: 3rem;
 
     h3{
         margin-bottom: 1rem;

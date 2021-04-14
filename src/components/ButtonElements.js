@@ -17,7 +17,6 @@ export const Button = styled(Link)`
     text-decoration: none;
     transition: 0.3s !important!;
     border-radius: ${({round}) => (round? '50px' : 'none')};
-    font-family: "Roboto", sans-serif;
 
     &:hover{
         background: ${({ primary }) => ( primary ? "#0467FB" :

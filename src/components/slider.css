@@ -1,0 +1,20 @@
+.slider-container{
+    padding: 8rem;
+}
+
+.slider-grid{
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 1200px){
+    .slider-container{
+        padding: 5rem 7rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .slider-container{
+        padding: 5rem 2rem;
+    }
+}
+

@@ -5,6 +5,7 @@ import Img from "gatsby-image";
 import { Button}  from './ButtonElements';
 import { ImLocation } from "react-icons/im";
 
+
 const TripsMaster = ({heading}) => {
 
     const data = useStaticQuery(graphql`
