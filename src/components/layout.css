@@ -39,7 +39,7 @@
 }
 
 .images-gallery{
-  background: rgb(128, 70, 202);
+  background: #3465c0;
   height: 50vh;
   width: 100%;
   object-fit: contain;
@@ -47,7 +47,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   margin-top: -80px;
   padding-top: 80px;
   text-align: center;
@@ -68,7 +67,7 @@
 }
 
 .about{
-  background: #c75625;
+  background: #3465c0;
   height: 50vh;
   width: 100%;
   object-fit: contain;
@@ -96,7 +95,7 @@
 }
 
 .contact{
-  background: #441f9b;
+  background: #3465c0;
   height: 50vh;
   width: 100%;
   object-fit: contain;
