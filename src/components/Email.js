@@ -28,7 +28,7 @@ const Email = () => {
                         min-width: 250px;
                         }
                        `}
-                       >Sign Up
+                       >Sign Up Now
                         </Button>
                    </FormWrap>
                </form>

@@ -32,7 +32,7 @@ const SliderTrips = () => {
                 <Slider {...settings}>
                 {data.allFile.edges.map((image, key) => (
                     <Img key={key}
-                    className="image-item"
+                    className="slider-item"
                     fluid={image.node.childImageSharp.fluid}
                     alt={image.node.base.split('.')[0]}
                     />
@@ -47,7 +47,7 @@ export default SliderTrips
 
     const settings = {
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 4500,
       dots: true,
       infinite: true,
       speed: 1000,

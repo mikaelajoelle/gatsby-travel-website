@@ -1,10 +1,9 @@
 .slider-container{
-    padding: 8rem;
+    padding: 16rem;
 }
 
-.slider-grid{
-    margin-top: 1.5rem;
-}
+.slick-list {margin: 0 -5px;}
+.slick-slide>div {padding: 0 5px;}
 
 @media screen and (max-width: 1200px){
     .slider-container{

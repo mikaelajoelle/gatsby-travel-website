@@ -70,7 +70,7 @@ export default Trips
 
 const ProductsContainer = styled.div`
     min-height: 100vh;
-    padding: 7rem calc((100vw - 1300px) / 2);
+    padding: 7rem 0;
     background: #fff;
     color: #fff;
 `
@@ -96,9 +96,9 @@ const ProductWrapper = styled.div`
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     justify-items: center;
-    padding: 0 10rem;
+    padding: 0 16rem;
 
-    @media screen and (max-width: 1200px){
+    @media screen and (max-width: 1300px){
         grid-template-columns: 1fr;
         padding: 0 7rem;
     }
@@ -121,8 +121,8 @@ const ProductImg = styled(Img)`
     max-width: 100%;
     position: relative;
     border-radius: 10px;
-    filter: brightness(70%);
-    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.2s ease-in;
+    filter: brightness(75%);
 
     &:hover{
         filter: brightness(100%);

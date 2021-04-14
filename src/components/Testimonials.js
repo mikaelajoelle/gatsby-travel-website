@@ -79,7 +79,7 @@ const TestimonialsContainer = styled.div`
     width: 100%;
     background: #fcfcfc;
     color: #000;
-    padding: 8rem 10rem;
+    padding: 8rem 16rem;
     height: 100%;
 
     @media screen and (max-width: 1200px){
@@ -115,12 +115,12 @@ const ContentWrapper = styled.div`
 
 const ColumnOne = styled.div`
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: minmax(15rem, 17rem);
 `
 
 const Testimonial = styled.div`
     padding-top: 1rem;
-    padding-right: 3rem;
+    padding-right: 4rem;
 
     h3{
         margin-bottom: 1rem;

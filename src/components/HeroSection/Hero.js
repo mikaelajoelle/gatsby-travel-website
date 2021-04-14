@@ -13,7 +13,7 @@ function HeroSection() {
             <div className="hero-btns">
                 {/* including props from styled components */}
                 <Button fontbig="true" big="true" primary="true" round="true" to="/destinations">
-                    Get Started
+                    Get Started Today
                 </Button>
             </div>
         </div>

@@ -13,6 +13,7 @@ const Navbar = () => {
     click? "#141414" : "#fff"};
     let navBackgroundStyle = {backgroundColor: scroll ? "#fff" : "transparent" && 
     click ? "#fff" : "transparent"};
+    let buttonStyles = {backgroundColor: scroll ? "#f26a2e" : "transparent"}
 
     // Toggle the mobile icon
     const handleClick = () => setClick(!click);
@@ -67,7 +68,12 @@ const Navbar = () => {
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
-                        <Button primary="true" round="true" to="/">
+                        <Button 
+                        style={buttonStyles}
+                        css={`
+                        background: transparent;
+                        border: 1px solid white;
+                        `} round="true" to="/">
                             Book a Flight
                         </Button>
                         </NavBtn>
