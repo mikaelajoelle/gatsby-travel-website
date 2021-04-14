@@ -1,0 +1,20 @@
+[
+    {
+        "img": "../images/background2.jpg",
+        "alt": "Boat in the Ocean",
+        "title": "1. Browse",
+        "desc": " Start by exploring Destinations or the Gallery. Apply filters like countries, tours and dates. You can also save favourites to a wishlist."
+    },
+    {
+        "img": "../images/travel-7.jpg",
+        "alt": "Boats on Croatian Coast",
+        "title": "2. Book",
+        "desc": "Once you've found what you're looking for, learn about your destination, read past guest reviews and get details on your travel destination."
+    },
+    {
+        "img": "../images/travel-5.jpg",
+        "alt": "Grand Mosque Abu Dhabi",
+        "title": "3. Go",
+        "desc": "You're all set! Connect with your travel agent through the Client Center for local tips, booking information, general questions and advice."
+    }
+]
