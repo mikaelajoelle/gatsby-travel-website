@@ -80,7 +80,7 @@ const ProductsContainer = styled.div`
     color: #fff;
     padding: 10rem 16rem;
 
-    @media screen and (max-width: 1300px){
+    @media screen and (max-width: 1200px){
         padding: 5rem 7rem;
     }
 

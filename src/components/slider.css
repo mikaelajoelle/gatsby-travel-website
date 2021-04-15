@@ -1,11 +1,11 @@
 .slider-container{
     padding: 10rem 16rem;
-    background: #fcfcfc;
+    background: #fafafb;
 }
 
 @media screen and (max-width: 1200px){
     .slider-container{
-        padding: 5rem 7rem;
+        padding: 5rem 7rem 7rem 5rem;
     }
 }
 

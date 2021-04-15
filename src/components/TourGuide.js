@@ -62,7 +62,7 @@ const TourContainer = styled.div`
     height: 100%;
 
     @media screen and (max-width: 1200px){
-        padding: 5rem 7rem;
+        padding: 7rem 7rem;
     }
 
     @media screen and (max-width: 600px){

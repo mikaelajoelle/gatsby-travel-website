@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import Img from "gatsby-image";
 import { useStaticQuery, graphql } from "gatsby";
+import {Button} from "../components/ButtonElements";
 
 const TeamGrid = () => {
 
@@ -64,6 +65,28 @@ const TeamGrid = () => {
             <TeamGrids>
                 {getTeam(data)}
             </TeamGrids>
+            <Button 
+            big="true" fontbig="true" primary="true" round="true" to="/contact"
+            css={`
+                display: block;
+                margin: 4rem auto 0 auto;
+                width: 213px;
+
+                @media screen and (max-width: 1200px){
+                    margin: 1rem auto 1rem auto;
+                }
+
+                @media screen and (max-width: 900px){
+                    margin: 5rem auto 0 auto;
+                }
+
+                @media screen and (max-width: 600px){
+                    margin: 3rem auto 0 auto;
+                }
+            `}
+            >
+                Contact Us Now
+            </Button>
         </TeamContainer>
     )
 }
@@ -76,9 +99,13 @@ const AboutDescription = styled.div`
     justify-content: center;
     align-items: center;
     color: #000;
-    padding: 7rem 12rem;
-    margin: 0 0 8rem 0;
-    background: #fcfcfc;
+    padding: 7rem 15rem;
+    margin: 0 0 10rem 0;
+    background: #fafafb;
+
+    @media screen and (max-width: 1200px){
+        padding: 5rem 7rem;
+    }
     
     @media screen and (max-width: 900px){
         padding: 5rem 4rem;
@@ -108,18 +135,24 @@ const TeamContainer = styled.div`
 `
 
 const TeamGrids = styled.div`
-    padding: 0 12rem;
+    padding: 0 15rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2rem;
+    grid-gap: 2.5rem;
+    grid-row-gap: 6rem;
+
+    @media screen and (max-width: 1200px){
+        padding: 5rem 7rem;
+    }
 
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr 1fr;
+        grid-row-gap: 3rem;
     }
         
     @media screen and (max-width: 900px){
         padding: 0 4rem;
-        grid-gap: 1rem;
+        grid-gap: 2rem;
     }
 
     @media screen and (max-width: 600px){
