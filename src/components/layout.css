@@ -39,7 +39,7 @@
 }
 
 .images-gallery{
-  background: rgb(128, 70, 202);
+  background: rgb(144, 92, 211);
   height: 50vh;
   width: 100%;
   object-fit: contain;
@@ -96,7 +96,7 @@
 }
 
 .contact{
-  background: #7021a5;
+  background: #be4e67; 
   height: 50vh;
   width: 100%;
   object-fit: contain;

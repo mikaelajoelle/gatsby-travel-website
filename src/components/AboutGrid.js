@@ -110,7 +110,10 @@ const StepContainer = styled.div`
 `
 
 const TextContent = styled.div`
-    padding: 0 4rem 4rem 0;
+    padding: 0 4rem 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     @media screen and (max-width: 1100px){
         padding: 0 0 4rem 0;
@@ -119,17 +122,18 @@ const TextContent = styled.div`
 
 const Heading = styled.h3`
     font-size: 2rem;
+    font-size: clamp(1.6rem, 4.5vw, 2rem);
 `
 
 const Description = styled.p`
     line-height: 1.5;
-    font-size: clamp(1.3rem, 4vw, 1.5rem);
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
     font-weight: 300;
     padding: 2rem 0;
 `
 
 const ImgContent = styled(Img)`
-    height: 100%;
+    height: 80%;
     max-width: 100%;
     position: relative;
     border-radius: 10px;
