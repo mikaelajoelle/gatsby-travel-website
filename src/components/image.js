@@ -1,9 +1,10 @@
 import React from 'react';
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
+import styled from "styled-components";
 import "./image.css";
 
-const Image = () => {
+const Image = ({heading}) => {
     const data = useStaticQuery(graphql`
     query {
         allFile(
@@ -25,6 +26,7 @@ const Image = () => {
 
     return (
         <div className="image-container">
+          <GalleryHeading>{heading}</GalleryHeading>
             <div className="image-grid">
                 {data.allFile.edges.map((image, key) => (
                     <Img key={key}
@@ -39,3 +41,19 @@ const Image = () => {
 }
 
 export default Image
+
+const GalleryHeading = styled.h2`
+    font-size: clamp(1.2rem, 4vw, 2.5rem);
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #000;
+    font-weight: 300;
+
+    &::after{
+        content: '';
+        border-bottom: 1px solid #000;
+        width: 60px;
+        display: block;
+        margin: 1rem auto 0 auto;
+    }
+`

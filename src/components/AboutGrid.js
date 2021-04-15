@@ -62,9 +62,17 @@ export default AboutGrid
 
 const AboutContainer = styled.div`
     min-height: 100vh;
-    padding: 7rem calc((100vw - 1300px) / 2);
+    padding: 7rem 0;
     background: #fff;
     color: #fff;
+
+    @media screen and (max-width: 1100px){
+        padding: 7rem 0 2rem 0;
+    }
+
+    @media screen and (max-width: 700px){
+        padding: 7rem 0 0 0;
+    }
 `
 
 const AboutHeading = styled.h2`
@@ -83,7 +91,7 @@ const AboutHeading = styled.h2`
     }
 `
 const AboutWrapper = styled.div`
-    padding: 0 10rem;
+    padding: 0 12rem;
     
     @media screen and (max-width: 900px){
         padding: 0 4rem;
@@ -96,16 +104,15 @@ const AboutWrapper = styled.div`
 
 const StepContainer = styled.div`
     display: grid;
-    grid-template-columns: 1.2fr .8fr;
+    grid-template-columns: 1.1fr 0.9fr;
     grid-template-rows: 325px;
-    grid-gap: 2rem;
-    padding: 6rem 0;
+    grid-gap: 1rem;
+    padding: 4rem 0;
     color: #000;
 
     @media screen and (max-width: 1100px){
         grid-template-columns: 1fr;
         grid-template-rows: 200px;
-        padding: 5rem 0;
     }
 `
 
@@ -127,7 +134,7 @@ const Heading = styled.h3`
 
 const Description = styled.p`
     line-height: 1.5;
-    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    font-size: clamp(1rem, 3.5vw, 1.3rem);
     font-weight: 300;
     padding: 2rem 0;
 `

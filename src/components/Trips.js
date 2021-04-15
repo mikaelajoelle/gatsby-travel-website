@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 import { Button}  from './ButtonElements';
 import { ImLocation } from "react-icons/im";
 
-const Trips = ({heading}) => {
+const Trips = () => {
 
     const data = useStaticQuery(graphql`
     query TripsQuery {
@@ -95,7 +95,7 @@ const ProductWrapper = styled.div`
     grid-gap: 10px;
     justify-items: center;
 
-    @media screen and (max-width: 1300px){
+    @media screen and (max-width: 900px){
         grid-template-columns: 1fr;
     }
 `

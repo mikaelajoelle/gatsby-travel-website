@@ -183,10 +183,14 @@ const InputWrapper = styled.div`
     }
 
     input{
-        width: 300px;
+        width: 25rem;
         height: 35px;
         border: 1px solid #d5d5d5;
         padding-left: 10px;
+
+        @media screen and (max-width: 500px){
+            width: 13rem;
+        }
     }
 `
 

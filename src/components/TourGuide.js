@@ -58,7 +58,7 @@ export default TourGuide
 const TourContainer = styled.div`
     width: 100%;
     color: #000;
-    padding: 10rem 16rem;
+    padding: 9rem 16rem;
     height: 100%;
 
     @media screen and (max-width: 1200px){
@@ -83,7 +83,7 @@ const TourText = styled.div`
     background: #f9b19b; 
     border-radius: 10px 0 0 10px;
     color: #fff;
-    padding: 1rem 0 5rem 0;
+    padding: 1.5rem 0 5.5rem 0;
 
     @media screen and (max-width: 1000px){
         border-radius: 10px 10px 0 0;

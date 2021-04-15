@@ -11,7 +11,7 @@ const SliderTrips = () => {
     const data = useStaticQuery(graphql`
     query {
         allFile(
-          filter: {extension: {regex: "/(jpg)|(jpeg)/"}, name: {nin: ["background", "background2", "travel-4", "testimonial-1", "testimonial-2"]}}
+          filter: {extension: {regex: "/(jpg)|(jpeg)/"}, name: {nin: ["background", "background2", "travel-4", "testimonial-1", "testimonial-2", "employee-1", "employee-2", "guide", "employee-3", "employee-4", "employee-5", "employee-6"]}}
         ) {
           edges {
             node {

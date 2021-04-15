@@ -1,0 +1,38 @@
+[
+    {
+        "img": "../images/employee-1.jpg",
+        "alt": "Boat in the Ocean",
+        "title": "Erica Jones",
+        "desc": "CEO / Co-Founder"
+    },
+    {
+        "img": "../images/employee-2.jpg",
+        "alt": "Boats on Croatian Coast",
+        "title": "Julia Hains",
+        "desc": "COO / Co-Founder"
+    },
+    {
+        "img": "../images/employee-3.jpg",
+        "alt": "Grand Mosque Abu Dhabi",
+        "title": "Henry Miller",
+        "desc": "Travel Agent"
+    },
+    {
+        "img": "../images/employee-4.jpg",
+        "alt": "Boat in the Ocean",
+        "title": "John Harman",
+        "desc": "Travel Agent"
+    },
+    {
+        "img": "../images/employee-5.jpg",
+        "alt": "Boats on Croatian Coast",
+        "title": "Georgia Fuller",
+        "desc": "Travel Coordinator"
+    },
+    {
+        "img": "../images/employee-6.jpg",
+        "alt": "Grand Mosque Abu Dhabi",
+        "title": "Rachel Green",
+        "desc": "Marketing Manager"
+    }
+]

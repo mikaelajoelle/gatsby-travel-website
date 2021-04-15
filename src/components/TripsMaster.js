@@ -105,7 +105,7 @@ const TripWrapper = styled.div`
     }
 
     @media screen and (max-width: 600px){
-        padding: 0 2rem;
+        padding: 0 3rem;
     }
 `
 

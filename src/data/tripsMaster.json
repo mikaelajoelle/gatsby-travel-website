@@ -1,14 +1,14 @@
 [
     {
         "img": "../images/travel-1.jpg",
-        "alt": "Tian Tan Buddha",
-        "name": "Tian Tan Buddha, Hong Kong",
+        "alt": "Tian Tan Buddha Hong Kong China",
+        "name": "Hong Kong, China",
         "button": "View Destination"
     },
     {
         "img": "../images/travel-2.jpg",
-        "alt": "Perhentian Islands",
-        "name": "Perhentian Islands, Malaysia",
+        "alt": "Perhentian Islands Bahasa Malaysia",
+        "name": "Bahasa, Malaysia",
         "button": "View Destination"
     },
     {

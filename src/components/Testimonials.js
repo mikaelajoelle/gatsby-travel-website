@@ -108,14 +108,14 @@ const ContentWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 950px){
         grid-template-columns: 1fr;
     }
 `
 
 const ColumnOne = styled.div`
     display: grid;
-    grid-template-rows: minmax(15rem, 17rem);
+    grid-gap: 2rem;
 `
 
 const Testimonial = styled.div`
@@ -141,7 +141,7 @@ const ColumnTwo = styled.div`
     margin-top: 2rem;
     grid-gap: 10px;
 
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 950px){
         grid-template-rows: 25rem 25rem;
     }
 `

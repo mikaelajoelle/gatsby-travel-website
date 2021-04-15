@@ -6,8 +6,8 @@ import Seo from "../components/seo";
 const Images = () => (
   <Layout>
     <Seo title="Images" />
-    <h1 className="images-gallery">Captured Moments</h1>
-    <Image />
+    <h1 className="images-gallery">Photo Gallery</h1>
+    <Image heading="Captured Moments"/>
   </Layout>
 )
 
