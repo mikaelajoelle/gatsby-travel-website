@@ -91,7 +91,11 @@ const AboutHeading = styled.h2`
     }
 `
 const AboutWrapper = styled.div`
-    padding: 0 15rem;
+    padding: 0 20rem;
+
+    @media screen and (max-width: 1500px){
+        padding: 5rem 15rem;
+    }
 
     @media screen and (max-width: 1200px){
         padding: 5rem 7rem;

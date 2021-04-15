@@ -30,7 +30,8 @@ const TourGuide = () => {
                         Become a Guide
                     </TourHeading>
                     <TourSubHeading>
-                        Earn extra income and unlock new opportunities by exploring
+                        Earn extra income and unlock new opportunities by exploring your city with fellow adventurers.
+                        Guides receive discounted travel rates and extended benefits.
                     </TourSubHeading>
                     <Button round="true" to="/"
                         css={`
@@ -41,6 +42,7 @@ const TourGuide = () => {
                                 background: #366bcc;
                                 color: white;
                             }
+                            font-size: clamp(1rem, 3vw, 1.1rem);
                         `}>
                         Learn More
                     </Button>
@@ -58,10 +60,14 @@ export default TourGuide
 const TourContainer = styled.div`
     width: 100%;
     color: #000;
-    padding: 9rem 16rem;
+    padding: 9rem 20rem;
     height: 100%;
 
-    @media screen and (max-width: 1200px){
+    @media screen and (max-width: 1500px){
+        padding: 5rem 15rem;
+    }
+
+    @media screen and (max-width: 1300px){
         padding: 7rem 7rem;
     }
 
@@ -73,9 +79,20 @@ const TourContainer = styled.div`
 const TourWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+
+    @media screen and (max-width: 1600px){
+        grid-template-rows: 450px;
+    }
 
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr;
+        grid-template-rows: 400px;
+    }
+
+    @media screen and (max-width: 700px){
+        grid-template-columns: 1fr;
+        grid-template-rows: 450px;
     }
 `
 
@@ -83,7 +100,12 @@ const TourText = styled.div`
     background: #f9b19b; 
     border-radius: 10px 0 0 10px;
     color: #fff;
-    padding: 1.5rem 0 5.5rem 0;
+    padding: 1.5rem 0 0 0;
+
+
+    @media screen and (max-width: 1600px){
+        padding: 1.5rem 0 5.5rem 0;
+    }
 
     @media screen and (max-width: 1000px){
         border-radius: 10px 10px 0 0;
@@ -97,7 +119,7 @@ const TourHeading = styled.h2`
 
 const TourSubHeading = styled.h3`
     font-size: 1.2rem;
-    padding: 1rem 3rem 2.5rem 3rem;
+    padding: 1rem 3rem 3rem 3rem;
     line-height: 1.5;
 `
 

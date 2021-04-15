@@ -79,10 +79,14 @@ const TestimonialsContainer = styled.div`
     width: 100%;
     background: #fafafb;
     color: #000;
-    padding: 8rem 16rem;
+    padding: 8rem 20rem;
     height: 100%;
 
-    @media screen and (max-width: 1200px){
+    @media screen and (max-width: 1500px){
+        padding: 5rem 15rem;
+    }
+
+    @media screen and (max-width: 1300px){
         padding: 5rem 7rem;
     }
 
