@@ -28,6 +28,7 @@
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.3",
+    "use-state-if-mounted": "^1.0.4",
     "yup": "^0.32.9"
   },
   "devDependencies": {

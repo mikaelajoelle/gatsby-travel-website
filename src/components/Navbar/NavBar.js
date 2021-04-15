@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn } from './NavbarElements';
 import {Button} from "../ButtonElements";
 
 const Navbar = () => {
+
+    const _isMounted = useRef(true); // Initial value _isMounted = true
 
     const [click, setClick] = useState(false);
     const [scroll, setScroll] = useState(false);
@@ -30,6 +32,7 @@ const Navbar = () => {
     useEffect(() => {
         changeNav();
         window.addEventListener("scroll", changeNav);
+        _isMounted.current = false;
     }, [])
 
     return (
