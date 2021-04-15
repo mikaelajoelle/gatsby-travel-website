@@ -31,7 +31,6 @@ const TourGuide = () => {
                     </TourHeading>
                     <TourSubHeading>
                         Earn extra income and unlock new opportunities by exploring your city with fellow adventurers.
-                        Guides receive discounted travel rates and extended benefits.
                     </TourSubHeading>
                     <Button round="true" to="/"
                         css={`
@@ -79,20 +78,20 @@ const TourContainer = styled.div`
 const TourWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px;
+    grid-template-rows: 350px;
 
     @media screen and (max-width: 1600px){
-        grid-template-rows: 450px;
+        grid-template-rows: 380px;
     }
 
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr;
-        grid-template-rows: 400px;
+        grid-template-rows: 350px;
     }
 
     @media screen and (max-width: 700px){
         grid-template-columns: 1fr;
-        grid-template-rows: 450px;
+        grid-template-rows: 400px;
     }
 `
 

@@ -100,7 +100,7 @@ const AboutDescription = styled.div`
     align-items: center;
     color: #000;
     padding: 7rem 20rem;
-    margin: 0 0 18rem 0;
+    margin: 0 0 15rem 0;
     background: #fafafb;
 
     @media screen and (max-width: 1500px){
@@ -109,6 +109,7 @@ const AboutDescription = styled.div`
 
     @media screen and (max-width: 1200px){
         padding: 5rem 7rem;
+        margin: 0 0 10rem 0;
     }
     
     @media screen and (max-width: 900px){
@@ -142,9 +143,8 @@ const TeamGrids = styled.div`
     padding: 0 15rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 500px 500px;
-    grid-gap: 2.5rem;
-    grid-row-gap: 10rem;
+    grid-template-rows: 400px 400px;
+    grid-gap: 10px;
 
     @media screen and (max-width: 1200px){
         padding: 5rem 7rem;
@@ -152,8 +152,7 @@ const TeamGrids = styled.div`
 
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 500px);
-        grid-row-gap: 3rem;
+        grid-template-rows: repeat(3, 400px);
     }
         
     @media screen and (max-width: 900px){
@@ -163,23 +162,37 @@ const TeamGrids = styled.div`
     @media screen and (max-width: 600px){
         padding: 0 3rem;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 500px);
+        grid-template-rows: repeat(6, 400px);
     }
-`
-
-const TeamWrapper = styled.div`
-    position: relative;
 `
 
 const TextContent = styled.div`
     align-items: center;
     position: absolute;
-    top: 375px;
+    top: 275px;
     z-index: 999;
     color: #000;
     background: white;
     padding: 0.9rem 3rem 0.9rem 0;
     border-radius: 0 10px 10px 0;
+    opacity: 0;
+    transition: .1s ease-in;
+
+    @media screen and (max-width: 1000px){
+        opacity: 1;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+`
+
+const TeamWrapper = styled.div`
+    position: relative;
+
+    &:hover ${TextContent} {
+        opacity: 1;
+    }
 `
 
 const Heading = styled.h3`
