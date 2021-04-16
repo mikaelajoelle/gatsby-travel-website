@@ -51,7 +51,7 @@ const TourGuide = () => {
                             }
                             font-size: clamp(1rem, 3vw, 1.1rem);
 
-                            @media screen and (max-width: 350px){
+                            @media screen and (max-width: 400px){
                                 margin: 1rem 2rem;
                             }
                         `}>
@@ -140,7 +140,7 @@ const TourSubHeading = styled.h3`
     padding: 1rem 3rem 3rem 3rem;
     line-height: 1.5;
 
-    @media screen and (max-width: 350px){
+    @media screen and (max-width: 400px){
         padding: 1rem 2rem 3rem 2rem;
     }
 `
