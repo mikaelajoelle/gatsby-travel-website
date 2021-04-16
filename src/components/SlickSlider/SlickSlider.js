@@ -41,7 +41,7 @@ const SliderTrips = () => {
                     <Img key={key}
                     className="slider-item"
                     fluid={image.node.childImageSharp.fluid}
-                    alt={image.node.base.split('.')[0]}
+                    alt={image.node.base}
                     />
                 ))}
                 </Slider>

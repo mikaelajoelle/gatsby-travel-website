@@ -41,7 +41,7 @@ const Image = ({heading}) => {
                     <Img key={key}
                     className="image-item"
                     fluid={image.node.childImageSharp.fluid}
-                    alt={image.node.base.split('.')[0]}
+                    alt={image.node.base}
                     />
                 ))}
             </div>
