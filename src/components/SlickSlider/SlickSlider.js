@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import styled from "styled-components";
 import Img from "gatsby-image";
 import { useStaticQuery, graphql } from "gatsby";
-import "../components/slider.css";
+import "./slider.css";
 
 const SliderTrips = () => {
     const data = useStaticQuery(graphql`

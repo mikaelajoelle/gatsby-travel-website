@@ -2,8 +2,8 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import "../components/layout.css";
-import AboutGrid from "../components/AboutGrid";
-import TeamGrid from "../components/TeamGrid";
+import AboutGrid from "../components/AboutSection/AboutGrid";
+import TeamGrid from "../components/AboutSection/TeamGrid";
 
 const About = () => (
   <Layout>

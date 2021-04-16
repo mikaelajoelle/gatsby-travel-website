@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import styled from "styled-components";
 import Img from "gatsby-image";
 import { useStaticQuery, graphql } from "gatsby";
-import {Button} from "../components/ButtonElements";
+import {Button} from "../ButtonElements";
 import AOS from 'aos';
 
 const TeamGrid = () => {
@@ -69,7 +69,7 @@ const TeamGrid = () => {
                 back into peoples’ lives.
                 </AboutPar>
             </AboutDescription>
-            <TeamGrids>
+            <TeamGrids data-aos={"fade-up"}>
                 {getTeam(data)}
             </TeamGrids>
             <Button 
