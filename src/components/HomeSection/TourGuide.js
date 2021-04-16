@@ -50,6 +50,10 @@ const TourGuide = () => {
                                 color: white;
                             }
                             font-size: clamp(1rem, 3vw, 1.1rem);
+
+                            @media screen and (max-width: 350px){
+                                margin: 1rem 2rem;
+                            }
                         `}>
                         Learn More
                     </Button>
@@ -100,9 +104,9 @@ const TourWrapper = styled.div`
         grid-template-rows: 350px;
     }
 
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 400px){
         grid-template-columns: 1fr;
-        grid-template-rows: 400px;
+        grid-template-rows: 380px;
     }
 `
 
@@ -119,14 +123,26 @@ const TourText = styled.div`
 `
 
 const TourHeading = styled.h2`
-    font-size: 2.2rem;
+    font-size: clamp(2rem, 3.5vw, 2.2rem);
     padding: 3rem 3rem 0 3rem;
+
+    @media screen and (max-width: 450px){
+        padding: 1.5rem 3rem 0 3rem;
+    }
+
+    @media screen and (max-width: 350px){
+        padding: 1.5rem 2rem 0 2rem;
+    }
 `
 
 const TourSubHeading = styled.h3`
-    font-size: 1.2rem;
+    font-size: clamp(1.1rem, 3vw, 1.2rem);
     padding: 1rem 3rem 3rem 3rem;
     line-height: 1.5;
+
+    @media screen and (max-width: 350px){
+        padding: 1rem 2rem 3rem 2rem;
+    }
 `
 
 const TourImg = styled(Img)`
