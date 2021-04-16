@@ -21,6 +21,12 @@
     }
 }
 
+@media screen and (max-width: 480px){
+    .slider-container{
+        padding: 5rem 2rem 7rem 2rem;
+    }
+}
+
 .slick-list {margin: 0 -5px;}
 .slick-slide>div {padding: 0 5px;}
 
