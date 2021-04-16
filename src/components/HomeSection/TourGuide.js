@@ -130,7 +130,7 @@ const TourHeading = styled.h2`
         padding: 1.5rem 3rem 0 3rem;
     }
 
-    @media screen and (max-width: 350px){
+    @media screen and (max-width: 400px){
         padding: 1.5rem 2rem 0 2rem;
     }
 `
