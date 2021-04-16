@@ -6,7 +6,7 @@ import TripsMaster from "../components/TripsMaster";
 
 const Destinations = () => (
   <Layout>
-    <Seo title="Destinations" />
+    <Seo title="Trips" />
     <h1 className="destinations">Destinations</h1>
     <TripsMaster heading="Find The Best Places" />
   </Layout>

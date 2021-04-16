@@ -5,7 +5,7 @@ import Seo from "../components/seo";
 
 const Images = () => (
   <Layout>
-    <Seo title="Images" />
+    <Seo title="Gallery" />
     <h1 className="images-gallery">Photo Gallery</h1>
     <Image heading="Captured Moments"/>
   </Layout>

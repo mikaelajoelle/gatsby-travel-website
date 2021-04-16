@@ -127,10 +127,6 @@ const ProductImg = styled(Img)`
     border-radius: 10px;
     transition: 0.2s ease-in;
     filter: brightness(75%);
-
-    &:hover{
-        filter: brightness(100%);
-    }
 `
 
 const ProductInfo= styled.div`

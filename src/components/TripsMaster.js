@@ -130,10 +130,6 @@ const TripImg = styled(Img)`
     border-radius: 10px;
     filter: brightness(70%);
     transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-    &:hover{
-        filter: brightness(100%);
-    }
 `
 
 const TripInfo= styled.div`
