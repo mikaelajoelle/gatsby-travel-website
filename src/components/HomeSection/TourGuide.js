@@ -106,7 +106,7 @@ const TourWrapper = styled.div`
 
     @media screen and (max-width: 400px){
         grid-template-columns: 1fr;
-        grid-template-rows: 400px;
+        grid-template-rows: 380px;
     }
 `
 
