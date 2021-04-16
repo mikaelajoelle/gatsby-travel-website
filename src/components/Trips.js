@@ -1,11 +1,19 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import { Button}  from './ButtonElements';
 import { ImLocation } from "react-icons/im";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const Trips = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration : 1000
+        });
+      }, []);
 
     const data = useStaticQuery(graphql`
     query TripsQuery {
@@ -58,7 +66,7 @@ const Trips = () => {
     }
 
     return (
-        <ProductsContainer>
+        <ProductsContainer data-aos={"fade-up"}>
             <TopLine>
                Destinations
            </TopLine>

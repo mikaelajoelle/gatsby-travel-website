@@ -1,10 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from "styled-components";
 import Img from "gatsby-image";
 import { useStaticQuery, graphql } from "gatsby";
 import {Button} from "../components/ButtonElements";
+import AOS from 'aos';
 
 const TeamGrid = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration : 1000
+        });
+      }, []);
 
     const data = useStaticQuery(graphql`
     query TeamQuery {
@@ -51,7 +58,7 @@ const TeamGrid = () => {
 
     return (
         <TeamContainer>
-            <AboutDescription>
+            <AboutDescription data-aos={"fade-right"}>
                 <TopHeading>
                 A Culture of Talent and Discovery
                 </TopHeading>
@@ -66,6 +73,7 @@ const TeamGrid = () => {
                 {getTeam(data)}
             </TeamGrids>
             <Button 
+            data-aos={"fade-left"}
             big="true" fontbig="true" primary="true" round="true" to="/contact"
             css={`
                 display: block;

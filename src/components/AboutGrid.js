@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from "styled-components";
 import Img from "gatsby-image";
 import { useStaticQuery, graphql } from "gatsby";
+import AOS from 'aos';
 
 const AboutGrid = ({heading}) => {
+
+    useEffect(() => {
+        AOS.init({
+          duration : 2000
+        });
+      }, []);
 
     const data = useStaticQuery(graphql`
     query AboutQuery {
@@ -49,7 +56,7 @@ const AboutGrid = ({heading}) => {
      }
 
     return (
-        <AboutContainer>
+        <AboutContainer data-aos={"fade-up"}>
             <AboutHeading>{heading}</AboutHeading>
             <AboutWrapper>
                 {getSteps(data)}
@@ -78,7 +85,7 @@ const AboutContainer = styled.div`
 const AboutHeading = styled.h2`
     font-size: clamp(1.2rem, 4vw, 2.5rem);
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 1.5rem;
     color: #000;
     font-weight: 300;
 

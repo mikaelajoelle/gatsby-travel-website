@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Formik, Form, useField, Field } from 'formik';
 import styled from "styled-components";
+import AOS from 'aos';
  
  const MyTextInput = ({ label, ...props }) => {
    // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
@@ -33,9 +34,16 @@ import styled from "styled-components";
  
  // And now we can use these
  const SignupForm = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration : 1000
+    });
+  }, []);
+
    return (
      <>
-       <FormContainer>
+       <FormContainer data-aos={"fade-up"}>
         <FormHeading>How Can We Help ?</FormHeading>
        <Formik
          initialValues={{

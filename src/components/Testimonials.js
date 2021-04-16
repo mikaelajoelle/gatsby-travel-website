@@ -1,11 +1,19 @@
-import React from 'react'
+import React, {useEffect} from 'react';
 import styled from "styled-components";
 import Img from "gatsby-image";
 import {IoMdCheckmarkCircleOutline} from "react-icons/io";
 import {FaRegLightbulb} from "react-icons/fa";
 import { useStaticQuery, graphql } from 'gatsby';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const Testimonials = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration : 2000
+        });
+      }, []);
 
     const data = useStaticQuery(graphql`
     query {
@@ -35,7 +43,7 @@ const Testimonials = () => {
            </Description>
            <ContentWrapper>
                <ColumnOne>
-               <Testimonial>
+               <Testimonial data-aos={"fade-right"}>
                    <IoMdCheckmarkCircleOutline 
                    css={`
                    color: #3fffa8; 
@@ -48,7 +56,7 @@ const Testimonials = () => {
                        the Traveyo services, you will not regret it!"
                    </p>
                </Testimonial>
-               <Testimonial>
+               <Testimonial data-aos={"fade-right"}>
                    <FaRegLightbulb 
                    css={`
                    color: #f9b19b; 
@@ -63,7 +71,7 @@ const Testimonials = () => {
                    </p>
                </Testimonial>
                </ColumnOne>
-               <ColumnTwo>
+               <ColumnTwo data-aos={"fade-up"}>
                 {data.allFile.edges.map((image, key) => (
                     <Images key={key} fluid={image.node.childImageSharp.fluid}/>
                 ))}

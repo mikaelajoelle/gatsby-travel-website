@@ -1,10 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from "styled-components";
 import Img from "gatsby-image";
 import { useStaticQuery, graphql } from "gatsby";
 import {Button} from "../components/ButtonElements";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 const TourGuide = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration : 1000
+        });
+      }, []);
 
     const data = useStaticQuery(graphql`
     query MyQuery {
@@ -24,7 +32,7 @@ const TourGuide = () => {
 
     return (
         <TourContainer>
-            <TourWrapper>
+            <TourWrapper data-aos={"fade-up"} >
                 <TourText>
                     <TourHeading>
                         Become a Guide
@@ -78,6 +86,7 @@ const TourContainer = styled.div`
 const TourWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
     grid-template-rows: 350px;
 
     @media screen and (max-width: 1600px){
@@ -97,7 +106,7 @@ const TourWrapper = styled.div`
 
 const TourText = styled.div`
     background: #f9b19b; 
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px;
     color: #fff;
     padding: 1.5rem 0 0 0;
 
@@ -107,7 +116,7 @@ const TourText = styled.div`
     }
 
     @media screen and (max-width: 1000px){
-        border-radius: 10px 10px 0 0;
+        border-radius: 10px;
     }
 `
 
