@@ -8,7 +8,7 @@ const Footer = () => {
            <FooterLinksWrapper>
                <FooterDesc>
                    <h3>Traveyo</h3>
-                   <p>We strive to create the best experiences for our customers</p>
+                   <p>For educational purposes only &mdash; Adapted from Brian Designs</p>
                </FooterDesc>
                <FooterLinkItems>
                    <FooterLinkTitle>Contact Us</FooterLinkTitle>
@@ -57,6 +57,10 @@ const FooterDesc = styled.div`
         font-size: 28px;
     }
 
+    p{
+        font-size: 15px;
+    }
+
     @media screen and (max-width: 400px){
         padding: 1rem;
     }
@@ -75,7 +79,11 @@ const FooterLinkItems = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem 2rem;
+    padding: 1rem 5rem;
+
+    @media screen and (max-width: 1000px){
+        padding: 1rem 2rem;
+    }
 
     @media screen and (max-width: 400px){
         padding: 1rem;
