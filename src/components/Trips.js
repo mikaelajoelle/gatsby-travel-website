@@ -66,7 +66,7 @@ const Trips = () => {
     }
 
     return (
-        <ProductsContainer data-aos={"fade-up"}>
+        <ProductsContainer>
             <TopLine>
                Destinations
            </TopLine>
@@ -74,7 +74,7 @@ const Trips = () => {
                Explore Popular Tours
            </Description>
             {/* Passing in data to function */}
-            <ProductWrapper>{getTrips(data)}</ProductWrapper>
+            <ProductWrapper data-aos={"fade-up"} data-aos-offset="0px">{getTrips(data)}</ProductWrapper>
         </ProductsContainer>
     )
 }

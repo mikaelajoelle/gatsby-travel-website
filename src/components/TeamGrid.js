@@ -178,7 +178,7 @@ const TextContent = styled.div`
     align-items: center;
     position: absolute;
     top: 275px;
-    z-index: 999;
+    z-index: 99;
     color: #000;
     background: white;
     padding: 0.9rem 3rem 0.9rem 0;

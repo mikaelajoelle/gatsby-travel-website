@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect} from 'react'
 import styled from "styled-components";
 import Img from "gatsby-image";
 import { useStaticQuery, graphql } from "gatsby";
@@ -32,7 +32,7 @@ const TourGuide = () => {
 
     return (
         <TourContainer>
-            <TourWrapper data-aos={"fade-up"} >
+            <TourWrapper data-aos={"fade-up"} data-aos-offset="0px">
                 <TourText>
                     <TourHeading>
                         Become a Guide
@@ -54,9 +54,11 @@ const TourGuide = () => {
                         Learn More
                     </Button>
                 </TourText>
+                <TourImageContainer>
                 {data.allFile.edges.map((image, key) => (
                     <TourImg key={key} fluid={image.node.childImageSharp.fluid}/>
                 ))}
+                </TourImageContainer>
             </TourWrapper>
         </TourContainer>
     )
@@ -114,10 +116,6 @@ const TourText = styled.div`
     @media screen and (max-width: 1600px){
         padding: 1.5rem 0 5.5rem 0;
     }
-
-    @media screen and (max-width: 1000px){
-        border-radius: 10px;
-    }
 `
 
 const TourHeading = styled.h2`
@@ -132,10 +130,7 @@ const TourSubHeading = styled.h3`
 `
 
 const TourImg = styled(Img)`
-    border-radius: 0 10px 10px 0;
+    border-radius: 10px;
     height: 100%;
-
-    @media screen and (max-width: 1000px){
-        border-radius: 0 0 10px 10px;
-    }
 `
+const TourImageContainer = styled.div``
