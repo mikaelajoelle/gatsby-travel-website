@@ -196,9 +196,17 @@ const InputWrapper = styled.div`
         border: 1px solid #d5d5d5;
         padding-left: 10px;
 
+        @media screen and (max-width: 1200px){
+          width: 22rem;
+      }
+
         @media screen and (max-width: 500px){
-            width: 13rem;
+            width: 15rem;
         }
+
+        @media screen and (max-width: 400px){
+          width: 12rem;
+      }
     }
 `
 
